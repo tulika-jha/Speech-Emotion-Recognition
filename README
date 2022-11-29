@@ -1,0 +1,11 @@
+# Speech-Emotion-Recognition
+Detecting emotions such as happiness, surprise, anger, sadness, fear, anxiety, calm and neutral using paralinguistic aspects of speech.
+
+Paralinguistic acoustic features include features such as frequency, loudness, spectral centroids, LFCCs, MFCCs, etc. These are extracted from the speech
+dataset 'RAVDESS' and included with the repo as 'features_652.json'. Number of features is 652.
+
+Run 'selection.py' to select the top 177 features and store it in 'X_diff.npy'.
+
+Each of the 5 classifiers makes use of 'features_652.json' and 'X_diff.npy' to detect emotion from speech. Each of them use K-fold cross-validation to report 
+performance metrics with K = 10.
+
